@@ -11,7 +11,7 @@ cargo build --release --target x86_64-unknown-linux-musl --examples
 ```
 cp ./target/x86_64-unknown-linux-musl/release/examples/hello ./bootstrap && zip lambda.zip bootstrap && rm bootstrap
 ```
-
+3. Open AWS Lambda console and upload lambda.zip.
 
 
 
