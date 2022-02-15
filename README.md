@@ -1,5 +1,19 @@
 # Rust Runtime for AWS Lambda
 
+lambda.zip is compiled from the lambda-runtime/example/basic.rs file.
+
+1. Compile all examples
+
+```
+cargo build --release --target x86_64-unknown-linux-musl --examples
+```
+2. Prepare the package for the example you want to test, e.g.
+```
+cp ./target/x86_64-unknown-linux-musl/release/examples/hello ./bootstrap && zip lambda.zip bootstrap && rm bootstrap
+```
+
+
+
 [![Build Status](https://github.com/awslabs/aws-lambda-rust-runtime/workflows/Rust/badge.svg)](https://github.com/awslabs/aws-lambda-rust-runtime/actions)
 
 This package makes it easy to run AWS Lambda Functions written in Rust. This workspace includes multiple crates:
