@@ -2,7 +2,7 @@
 
 lambda.zip is compiled from the lambda-runtime/example/basic.rs file.
 
-1. Compile all examples
+1. Compile all examples in the lambda-runtime/example folder.
 
 ```
 cargo build --release --target x86_64-unknown-linux-musl --examples
